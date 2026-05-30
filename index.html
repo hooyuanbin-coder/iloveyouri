@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+<base target="_blank">
+</head>
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="hearts-container"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="heart-icon">💕</span>
+        <span>Our Love</span>
+      </a>
+      <button class="mobile-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="letter.html">Love Letter</a></li>
+        <li><a href="music.html">Our Music</a></li>
+        <li><a href="countdown.html">Countdown</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>You & Me<br>Forever 💕</h1>
+        <p class="subtitle">A love story written in the stars</p>
+        <div class="date-display"></div>
+        <p style="color: var(--text-light); margin-bottom: 2rem;">
+          💕 Together for <span class="days-together">0</span> beautiful days 💕
+        </p>
+        <a href="story.html" class="cta-button">Read Our Story ✨</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+      <div class="section-header fade-in">
+        <div class="section-icon">✨</div>
+        <h2>Explore Our World</h2>
+        <p>Every page holds a piece of our beautiful journey together</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card fade-in">
+          <span class="card-icon">📖</span>
+          <h3>Our Story</h3>
+          <p>How we met, fell in love, and everything in between. The beginning of our forever.</p>
+          <a href="story.html" class="cta-button" style="margin-top: 1rem; padding: 0.6rem 1.5rem; font-size: 0.9rem;">Read More</a>
+        </div>
+
+        <div class="card fade-in">
+          <span class="card-icon">📸</span>
+          <h3>Photo Gallery</h3>
+          <p>A collection of our most precious memories captured in photographs. Every smile tells a story.</p>
+          <a href="gallery.html" class="cta-button" style="margin-top: 1rem; padding: 0.6rem 1.5rem; font-size: 0.9rem;">View Gallery</a>
+        </div>
+
+        <div class="card fade-in">
+          <span class="card-icon">⏰</span>
+          <h3>Love Timeline</h3>
+          <p>From the first hello to now, trace every milestone that made our love stronger.</p>
+          <a href="timeline.html" class="cta-button" style="margin-top: 1rem; padding: 0.6rem 1.5rem; font-size: 0.9rem;">See Timeline</a>
+        </div>
+
+        <div class="card fade-in">
+          <span class="card-icon">💌</span>
+          <h3>Love Letter</h3>
+          <p>Words from the heart, written just for you. My feelings expressed in every line.</p>
+          <a href="letter.html" class="cta-button" style="margin-top: 1rem; padding: 0.6rem 1.5rem; font-size: 0.9rem;">Read Letter</a>
+        </div>
+
+        <div class="card fade-in">
+          <span class="card-icon">🎵</span>
+          <h3>Our Music</h3>
+          <p>The songs that soundtrack our love story. Every melody reminds me of you.</p>
+          <a href="music.html" class="cta-button" style="margin-top: 1rem; padding: 0.6rem 1.5rem; font-size: 0.9rem;">Listen</a>
+        </div>
+
+        <div class="card fade-in">
+          <span class="card-icon">🎯</span>
+          <h3>Special Countdown</h3>
+          <p>Counting down the moments until our next special day together. Every second matters.</p>
+          <a href="countdown.html" class="cta-button" style="margin-top: 1rem; padding: 0.6rem 1.5rem; font-size: 0.9rem;">View Countdown</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Quote Section -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="quote-card fade-in">
+        <div class="quote-mark">"</div>
+        <blockquote>
+          In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.
+        </blockquote>
+        <div class="quote-author">— Maya Angelou</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-heart">💕</div>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="letter.html">Love Letter</a></li>
+    </ul>
+    <p>Made with 💕 for You | Forever & Always</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize days together counter
+    // EDIT THIS: Set your relationship start date (YYYY-MM-DD format)
+    RomanticSite.initDaysTogether('2023-01-01');
+  </script>
+</body>
+</html>
