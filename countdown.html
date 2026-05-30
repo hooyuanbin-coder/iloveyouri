@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown 🎯</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+<base target="_blank">
+</head>
+<body>
+  <div class="hearts-container"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="heart-icon">💕</span>
+        <span>Our Love</span>
+      </a>
+      <button class="mobile-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="letter.html">Love Letter</a></li>
+        <li><a href="music.html">Our Music</a></li>
+        <li><a href="countdown.html" class="active">Countdown</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" style="min-height: 50vh;">
+      <div class="hero-content">
+        <h1>Counting Down 🎯</h1>
+        <p class="subtitle">Every second brings us closer</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header fade-in">
+        <div class="section-icon">🎯</div>
+        <h2>Until Our Special Day</h2>
+        <!-- EDIT THIS: Change the date and event name -->
+        <p>Counting down to our next anniversary together 💕</p>
+      </div>
+
+      <div class="countdown-container fade-in">
+        <div class="countdown-item">
+          <span class="number">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number">00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+          <span class="number">00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <div class="quote-card fade-in" style="max-width: 500px; margin: 0 auto;">
+          <div class="quote-mark">"</div>
+          <blockquote>
+            <!-- EDIT THIS: Your special message -->
+            I can't wait to celebrate another beautiful year of us together. 
+            Every moment with you is a gift I cherish.
+          </blockquote>
+          <div class="quote-author">— With All My Love</div>
+        </div>
+      </div>
+
+      <!-- Days Together Counter -->
+      <div style="text-align: center; margin-top: 4rem; padding: 2rem;">
+        <h3 style="font-family: var(--font-heading); color: var(--primary-dark); font-size: 2rem; margin-bottom: 1rem;">
+          💕 We've Been Together For 💕
+        </h3>
+        <div style="font-size: 4rem; color: var(--primary); font-family: var(--font-heading); font-weight: 700;">
+          <span class="days-together">0</span>
+        </div>
+        <p style="color: var(--text-light); font-size: 1.2rem; margin-top: 0.5rem;">Beautiful Days</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-heart">💕</div>
+    <p>Made with 💕 for You | Forever & Always</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // EDIT THIS: Set your target date (YYYY-MM-DD format)
+    // This could be your anniversary, next date, or any special day
+    RomanticSite.initCountdown('2026-12-31');
+
+    // EDIT THIS: Set your relationship start date
+    RomanticSite.initDaysTogether('2023-01-01');
+  </script>
+</body>
+</html>
