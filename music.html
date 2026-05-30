@@ -7,17 +7,57 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-<base target="_blank">
+  <style>
+    .spotify-player {
+      background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+      border-radius: 20px;
+      padding: 2.5rem;
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(29, 185, 84, 0.3);
+      color: white;
+    }
+    .spotify-player .album-art {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      border: 3px solid rgba(255,255,255,0.3);
+    }
+    .spotify-player h3 {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+      color: white;
+    }
+    .spotify-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2.5rem;
+      background: white;
+      color: #1db954;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+    .spotify-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+    }
+  </style>
 </head>
 <body>
   <div class="hearts-container"></div>
-
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="logo">
-        <span class="heart-icon">💕</span>
-        <span>Our Love</span>
-      </a>
+      <a href="index.html" class="logo"><span class="heart-icon">💕</span><span>Our Love</span></a>
       <button class="mobile-toggle">☰</button>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -40,91 +80,21 @@
     <section class="section">
       <div class="section-header fade-in">
         <div class="section-icon">🎵</div>
-        <h2>Our Special Songs</h2>
-        <p>song that always make me remind of you </p>
+        <h2>Our Special Song</h2>
+        <p>This song always reminds me of you</p>
       </div>
 
-      <!-- Featured Song Player -->
-      <div class="music-player fade-in" style="margin-bottom: 3rem;">
+      <div class="spotify-player fade-in">
         <div class="album-art">🎵</div>
-        <div class="song-info">
-          <!-- EDIT THIS: Your special song -->
-          <h3>Paradise</h3>
-          <p>Chase Atlantic — Our Song</p>
-        </div>
-        <div class="player-controls">
-          <button class="player-btn">⏮</button>
-          <button class="player-btn play">▶</button>
-          <button class="player-btn">⏭</button>
-        </div>
-        <div class="progress-bar">
-          <div class="progress-fill"></div>
-        </div>
-      </div>
-
-      <!-- Song List -->
-      <div class="cards-grid" style="max-width: 800px; margin: 0 auto;">
-        <div class="card fade-in">
-          <span class="card-icon">🎵</span>
-          <h3>Our First Dance Song</h3>
-          <p>
-            <!-- EDIT THIS -->
-            <strong>"Perfect"</strong> by Chase Atlantic<br>
-            <em>The song that its your most fav</em>
-          </p>
-        </div>
-
-        <div class="card fade-in">
-          <span class="card-icon">🎸</span>
-          <h3>The Song That Reminds Me of You</h3>
-          <p>
-            <!-- EDIT THIS -->
-            <strong>"All of Me"</strong> by John Legend<br>
-            <em>Every lyric feels like it was written about us</em>
-          </p>
-        </div>
-
-        <div class="card fade-in">
-          <span class="card-icon">🎹</span>
-          <h3>Our Road Trip Anthem</h3>
-          <p>
-            <!-- EDIT THIS -->
-            <strong>"Can't Help Falling in Love"</strong> by Elvis Presley<br>
-            <em>Singing this together on every drive</em>
-          </p>
-        </div>
-
-        <div class="card fade-in">
-          <span class="card-icon">🎤</span>
-          <h3>Your Favorite Song</h3>
-          <p>
-            <!-- EDIT THIS -->
-            <strong>"[Song Name]"</strong> by [Artist]<br>
-            <em>The song you always play that makes me smile</em>
-          </p>
-        </div>
-
-        <div class="card fade-in">
-          <span class="card-icon">🎧</span>
-          <h3>Our Late Night Song</h3>
-          <p>
-            <!-- EDIT THIS -->
-            <strong>"[Song Name]"</strong> by [Artist]<br>
-            <em>The song we listen to when the world is quiet</em>
-          </p>
-        </div>
-
-        <div class="card fade-in">
-          <span class="card-icon">💿</span>
-          <h3>Our Playlist</h3>
-          <p>
-            <!-- EDIT THIS: Add your Spotify/Apple Music link -->
-            <a href="#" target="_blank" style="color: var(--primary); text-decoration: none;">
-              🎵 Listen to Our Complete Playlist
-            </a><br>
-            <em>All the songs that tell our story</em>
-          </p>
-        </div>
+        <h3>Paradise</h3>
+        <p style="color:rgba(255,255,255,0.9);margin-bottom:1.5rem;">Chase Atlantic</p>
+        <a href="https://open.spotify.com/track/0z8wT8O5yGaQK6xRPB14sX" target="_blank" class="spotify-btn">
+          <span style="font-size:1.5rem;">🎵</span>
+          <span>Play on Spotify</span>
+        </a>
+        <p style="margin-top:1rem;font-size:0.85rem;color:rgba(255,255,255,0.7);">
+          💚 Click to open Spotify and play instantly
+        </p>
       </div>
     </section>
   </main>
@@ -133,7 +103,6 @@
     <div class="footer-heart">💕</div>
     <p>Made with 💕 for You | Forever & Always</p>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
