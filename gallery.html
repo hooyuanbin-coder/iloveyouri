@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Gallery 📸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+<base target="_blank">
+</head>
+<body>
+  <div class="hearts-container"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="heart-icon">💕</span>
+        <span>Our Love</span>
+      </a>
+      <button class="mobile-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="letter.html">Love Letter</a></li>
+        <li><a href="music.html">Our Music</a></li>
+        <li><a href="countdown.html">Countdown</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" style="min-height: 50vh;">
+      <div class="hero-content">
+        <h1>Our Memories 📸</h1>
+        <p class="subtitle">Every picture tells our love story</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header fade-in">
+        <div class="section-icon">📸</div>
+        <h2>Photo Gallery</h2>
+        <p>Click on any photo to see it larger. Replace these with your own special moments!</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- EDIT THIS: Replace with your actual photos -->
+        <!-- To add a real photo: <div class="gallery-item"><img src="images/photo1.jpg" alt="Description"><div class="gallery-overlay"><h4>Caption</h4></div></div> -->
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">📸</span>
+            <span>First Date</span>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">🌅</span>
+            <span>Sunset Together</span>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">🎂</span>
+            <span>Birthday Celebration</span>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">✈️</span>
+            <span>Our First Trip</span>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">🎄</span>
+            <span>Holiday Together</span>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">🍽️</span>
+            <span>Dinner Date</span>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">🌸</span>
+            <span>Spring Walk</span>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">🎁</span>
+            <span>Special Surprise</span>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in">
+          <div class="placeholder">
+            <span class="icon">🏖️</span>
+            <span>Beach Day</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.8); border-radius: 20px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <h3 style="font-family: var(--font-heading); color: var(--primary-dark); margin-bottom: 1rem;">💡 How to Add Your Photos</h3>
+        <p style="color: var(--text-light); line-height: 1.8;">
+          1. Put your photos in the <code>images/</code> folder<br>
+          2. Replace the placeholder divs above with:<br>
+          <code>&lt;div class="gallery-item"&gt;&lt;img src="images/your-photo.jpg" alt="Description"&gt;&lt;/div&gt;</code><br>
+          3. Save and refresh!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-heart">💕</div>
+    <p>Made with 💕 for You | Forever & Always</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
